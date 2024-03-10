@@ -47,12 +47,12 @@ address {
 }
 
 .header {
-  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header-container {
   display: flex;
+  padding: 24px 0;
 }
 
 .header-navigation {
@@ -118,12 +118,12 @@ address {
 /*---------hero-------*/
 
 .hero-wrap {
-  padding: 188px 472px 188px 472px;
+  padding: 188px 0;
   background: #2e2f42;
 }
 
 .hero-title {
-  width: 496px;
+  max-width: 496px;
   height: 168px;
   font-weight: 700;
   font-size: 56px;
@@ -132,6 +132,7 @@ address {
   text-align: center;
   color: #fff;
   padding-bottom: 48px;
+  margin: 0 auto;
 }
 
 .hero-order-btn {
@@ -145,6 +146,9 @@ address {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
   /*width: 169px;
   height: 56px;*/
 }
@@ -155,8 +159,22 @@ address {
 }
 
 /*-------advantages-------*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .advantages {
-  margin: 120px 0;
+  padding: 120px 0;
 }
 
 .advantages-list {
@@ -187,7 +205,7 @@ address {
 /*---------team-------*/
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
+  padding: 120px 0;
 }
 
 .team-list {
@@ -238,7 +256,7 @@ address {
 
 /*-----------portfolio-----*/
 .portfolio-container {
-  padding-bottom: 120px;
+  padding: 120px 0;
 }
 .portfolio-title {
   font-weight: 700;
@@ -248,7 +266,7 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-  padding: 120px 0 72px 0;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
