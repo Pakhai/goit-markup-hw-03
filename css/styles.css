@@ -277,8 +277,7 @@ address {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
-
-  margin-bottom: 8px;
+  margin-bottom: 72px;
 }
 
 .portfolio-list {
@@ -308,6 +307,7 @@ address {
   color: #2e2f42;
   padding-top: 32px;
   padding-left: 16px;
+  margin-bottom: 8px;
 }
 
 .portfolio-item-text {
