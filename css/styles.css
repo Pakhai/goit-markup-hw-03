@@ -4,19 +4,63 @@ body {
   color: #434455;
 }
 
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-button {
-  cursor: pointer;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
 }
 
 /*-----Header--------*/
+.container {
+  max-width: 1440px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-container {
+  display: flex;
+}
+
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+}
+
 .header-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
@@ -25,10 +69,21 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  margin-right: 76px;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-logo-color {
   color: #2e2f42;
+}
+
+.header-contact-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-menu-link {
@@ -43,9 +98,11 @@ button {
 .header-menu-link:focus {
   color: #404bbf;
 }
+
 .header-contact {
   font-style: normal;
 }
+
 .header-contact-link {
   font-size: 16px;
   line-height: 1.5;
@@ -59,17 +116,22 @@ button {
 }
 
 /*---------hero-------*/
-.hero {
+
+.hero-wrap {
+  padding: 188px 472px 188px 472px;
   background: #2e2f42;
 }
 
 .hero-title {
+  width: 496px;
+  height: 168px;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
+  padding-bottom: 48px;
 }
 
 .hero-order-btn {
@@ -80,6 +142,11 @@ button {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px 32px;
+  /*width: 169px;
+  height: 56px;*/
 }
 
 .hero-order-btn:hover,
@@ -88,12 +155,26 @@ button {
 }
 
 /*-------advantages-------*/
+.advantages {
+  margin: 120px 0;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 24px;
+}
+
+.advantages-list-item {
+  width: calc((100% - 3 * 24px) / 4);
+}
+
 .advantages-item-subtitle {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 
 .address-item-text {
@@ -106,10 +187,19 @@ button {
 /*---------team-------*/
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 72px;
+  padding-bottom: 120px;
 }
 
 .team-list-item {
   background-color: #ffffff;
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .team-title {
@@ -122,6 +212,10 @@ button {
   color: #2e2f42;
 }
 
+.team-item-image {
+  padding: 0 16px;
+}
+
 .team-item-name {
   font-weight: 500;
   font-size: 20px;
@@ -129,6 +223,8 @@ button {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
+  padding-bottom: 8px;
+  padding-top: 32px;
 }
 
 .team-item-text {
@@ -136,9 +232,14 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  text-align: center;
+  padding-bottom: 32px;
 }
 
 /*-----------portfolio-----*/
+.portfolio-container {
+  padding-bottom: 120px;
+}
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -147,10 +248,19 @@ button {
   text-align: center;
   text-transform: capitalize;
   color: #2e2f42;
+  padding: 120px 0 72px 0;
 }
 
 .portfolio-list {
   background-color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
+}
+
+.portfolio-item {
+  width: calc((100% - 2 * 24px) / 3);
 }
 
 .portfolio-item-subtitle {
@@ -159,6 +269,8 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 
 .portfolio-item-text {
@@ -166,12 +278,17 @@ button {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding-top: 8px;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 /*--------footer-----*/
 .footer {
   font-family: "Raleway", sans-serif;
   background: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .footer-link {
@@ -191,5 +308,9 @@ button {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  width: 264px;
+  height: 72px;
   color: #f4f4fd;
+  padding-top: 16px;
+  padding-bottom: 100px;
 }
